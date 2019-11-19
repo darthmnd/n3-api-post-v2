@@ -1,2 +1,6 @@
 # n3-api-post-v2
-reestruturação da api post com adição de banco de dados :)
+
+:heart: Tarefas realizadas até 19/11:
+
+- Utilização do mongoose para estruturar o banco
+- Criando contatos com método POST
