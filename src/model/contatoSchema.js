@@ -23,7 +23,7 @@ const contatoSchema = new Schema ({
     },
 
     fotoPerfil: {
-        type: String,
+        type: Buffer,
         required: false
     }
 })
