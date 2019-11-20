@@ -4,3 +4,4 @@
 
 - Utilização do mongoose para estruturar o banco
 - Criando contatos com método POST
+- Adição de rota DELETE para remover usuário por id
