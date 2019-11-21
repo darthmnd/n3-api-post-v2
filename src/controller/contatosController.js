@@ -51,6 +51,20 @@ const deleteById = (request, response) => {
   })
 }
 
+const updateUser = (request, response) => {
+  const body = request.body
+  const id = request.params.id
+  const options = {new: true}
+
+  contatosCollection.findByIdAndUpdate(id, body, options, (error, contato) => {
+    if(error){
+      return response.status(500).send(error)
+    } else {
+      return response.status(201).send(contato) 
+    }
+  })  
+}
+
 const add = (request, response) => {
   const contatoBody = request.body
   const contato = new contatosCollection(contatoBody)
@@ -69,5 +83,6 @@ module.exports = {
   getByName,
   getById,
   deleteById,
+  updateUser,
   add
 }
